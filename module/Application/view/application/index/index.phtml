@@ -1,0 +1,44 @@
+<div class="conteiner">
+	<div class="bloco-leiloes">
+		<?php
+		$horas = array('00:03:12', '00:00:16', '23:27:45', '02:08:21', '15:02:45', '17:53:31', '23:59:59');
+		for ($i = 0; $i < 6; $i++) :
+			$id = uniqid(rand());
+			$adHora =  "+" . rand(0, 9) . "hours " . rand(0, 9) . "minutes " . rand(0, 9) . "seconds";
+			$data_leilao = date("Y-m-d", strtotime("+" . rand(0, 60) . "days", strtotime("now")));
+			$hora_leilao = $horas[$i];
+			$lances = "0.00";
+		?>
+		<div class="item-leilao" id="<?php echo $id; ?>">
+			<div class="sombra-padrao sombra-inferior-esquerda"></div>
+			<div class="sombra-padrao sombra-esquerda"></div>
+			<div class="sombra-padrao sombra-superior-esquerda"></div>
+			<div class="sombra-superior sombra-superior-padrao"></div>
+			<div class="caixa-item-leilao">
+				<input type="hidden" id="data-leilao_<?php echo $id; ?>" value="<?php echo $data_leilao; ?>" />
+				<input type="hidden" id="hora-leilao_<?php echo $id; ?>" value="<?php echo $hora_leilao ; ?>" />
+				<h5 class="leilao-titulo">
+					<a href="#">TV LG 34 Polegadas 3 Saídas HDMI 2 Saídas USB c/ Comversor Digital</a>
+				</h5>
+				<a href="<?php $_SERVER['DOCUMENT_ROOT']; ?>" class="leilao-imagem">
+					<img src="/img/tv.jpg" height="150" width="150" />
+				</a>
+				<div class="leilao-timer" id="timer-<?php echo $id; ?>">
+					<span class="caixa-timer"><?php echo $hora_leilao ; ?></span>
+				</div>
+				<div class="leilao-lances">
+					<input type="hidden" id="lances-leilao_<?php echo $id; ?>" value="<?php echo $lances; ?>" />
+					<span class="caixa-lances"><?php echo "R$ " . str_replace(".", "," ,$lances); ?></span>
+				</div>
+				<button name="lance" class="btao btao-lance">Lance</button>
+				<div class="leilao-ultimo-usuario">Teste</div>
+			</div>
+			<div class="sombra-padrao sombra-superior-direita"></div>
+			<div class="sombra-padrao sombra-direita"></div>
+			<div class="sombra-padrao sombra-infeiror-direita"></div>
+			<div class="sombra-infeiror sombra-inferior-padrao"></div>
+		</div>
+		<?php endfor; ?>
+	</div>
+	<div class="bloco-promocoes">ddddd</div>
+</div>

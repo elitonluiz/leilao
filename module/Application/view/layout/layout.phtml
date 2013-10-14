@@ -1,0 +1,53 @@
+<?php echo $this->doctype(); ?>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <?php
+        echo $this->headTitle('Leilao de Centavos '. $this->translate('Skeleton Application'))->setSeparator(' - ')->setAutoEscape(false);
+        
+        echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'))
+        	->prependStylesheet($this->basePath() . '/css/style.css')
+            ->prependStylesheet($this->basePath() . '/css/leilao.css');
+        ?>
+		<script type="text/javascript" src="/js/jquery.min.js"></script>
+		<script type="text/javascript" src="/js/timer.js"></script>
+    </head>
+    <body>
+    	<div class="conteiner conteiner-cabecalho">
+	    	<div class="cabecalho">
+	    		<a href="<?php $this->url('home'); ?>" class="titulo"></a>
+	    		<ul class="menu">
+	    			<li class="menu-item">
+	    				<a href="<?php $this->url('home'); ?>">
+		    				<span class="menu-img menu-inicio"></span>
+		    				<span class="menu-titulo">Início</span>
+	    				</a>
+	    			</li>
+	    			<li class="menu-item">
+	    				<a href="<?php $this->url('home'); ?>/cadastro">
+		    				<span class="menu-img menu-cadastro"></span>
+		    				<span class="menu-titulo">Cadastre-se</span>
+	    				</a>
+	    			</li>
+	    			<li class="ultimo-menu-item">
+	    				<a href="<?php $this->url('home'); ?>/loja">
+		    				<span class="menu-img menu-loja"></span>
+		    				<span class="menu-titulo">Lances</span>
+	    				</a>
+	    			</li>
+	    		</ul>
+	    	</div>
+	    </div>
+	    <div class="conteiner">
+	    	<div class="conteudo">
+	    		<?php echo $this->content; ?>
+	    	</div>
+    	</div>
+    	<div class="conteiner conteiner-rodape">
+	    	<div class="rodape">
+	    		nada
+	    	</div>
+    	</div>
+    </body>
+</html>

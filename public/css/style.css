@@ -1,0 +1,204 @@
+html, body, ul, p{
+	padding: 0; 
+}
+html, body{
+	height: auto;
+	min-height: 100%;
+	margin: 0;
+}
+body {
+	font-family: Verdana, Geneva, sans-serif;
+}
+.conteiner {
+	display: block;
+	width: 100%;
+}
+.conteiner-cabecalho {
+	background: url('/img/fundo-cabecalho.png') bottom repeat-x;
+}
+.conteiner-rodape {
+	background-color: #333;
+}
+/* Cabeçalho (Titulo, menu) */
+.cabecalho {
+	height: 150px;
+}
+.cabecalho .titulo{
+	background: url('/img/titulo.png') center no-repeat;
+	display: block;
+	height: 110px;
+	width: 195px;
+}
+.cabecalho .menu {
+	height: 40px;
+	margin: 0 auto;
+	list-style: none;
+	padding: 2px 0;
+	width: 80%;
+}
+.menu li{
+	float: left;
+	height: 36px;
+	overflow: hidden;
+}
+.menu .menu-item {
+	margin-right: 1%;
+	width: 32.5%;
+}
+.menu .ultimo-menu-item {
+	width: 33%;
+}
+.menu li a {
+	color: #fff;
+	display: block;
+	font-size: 1.3em;
+	height: 100%;
+	line-height: 1.8em;
+	text-decoration: none;
+	width: 100%;
+}
+.menu li a:hover {
+	background: url('/img/menu-hover.png');
+}
+.menu li a span {
+	display: block;
+	float: left;
+}
+.menu .menu-img {
+	background: url('/img/sprite-menu.png') no-repeat;
+	height: 100%;
+	width: 15%;
+}
+.menu .menu-inicio {
+	background-position: 0 -2px;
+}
+.menu .menu-cadastro {
+	background-position: -40px -2px;
+}
+.menu .menu-loja {
+	background-position: -80px -2px;
+}
+.menu .menu-titulo {
+	height: 100%;
+	padding-left: 1%;
+	width: 83%;
+}
+
+/* Fim Cabeçalho*/
+/* Conteudo do site */
+.conteudo {
+	background-color: #fbfbfb;
+	display: block;
+	height: auto;
+	min-height: 450px;
+	padding: 5px 0;
+	overflow: hidden; 
+}
+/* Fim conteudo */
+/* Rodapé */
+.rodape{
+	min-height: 60px;
+}
+/* Rodapé */
+.cabecalho,
+.conteudo,
+.rodape {
+	margin: 0 auto;
+	width: 80%;
+}
+/* Fim rodapé */
+.btao {
+	cursor: pointer;
+}
+.sombra-padrao {
+	background-image: url('/img/sprite-sombra-padrao.png');
+	position: absolute;
+}
+.sombra-vermelha {
+	background-image: url('/img/sprite-sombra-vermelha.png');
+	position: absolute;
+}
+.sombra-interna {
+	background-image: url('/img/sprite-sombra-interna.png');
+	position: absolute;
+}
+.sombra-inferior-esquerda {
+	background-position: -6px 0;
+	background-repeat: no-repeat;
+	bottom: 0;
+	height: 1%;
+	left: 0;
+	width: 1%;
+}
+.sombra-esquerda {
+	background-position: -12px 0;
+	background-repeat: repeat-y;
+	height: 98%;
+	left: 0;
+	top: 1%;
+	width: 1%;
+}
+.sombra-superior-esquerda {
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	height: 1%;
+	left: 0;
+	top: 0;
+	width: 1%;
+}
+.sombra-superior {
+	height: 1%;
+	left: 1%;
+	top: 0;
+	position: absolute;
+	width: 98%;
+}
+.sombra-superior-direita {
+	background-position: -3px 0;
+	background-repeat: no-repeat;
+	height: 1%;
+	right: 0;
+	top: 0;
+	width: 1%;
+}
+.sombra-direita {
+	background-position: -15px 0;
+	background-repeat: repeat-y;
+	height: 98%;
+	right: 0;
+	top: 1%;
+	width: 1%;
+}
+.sombra-infeiror-direita {
+	background-position: -9px 0;
+	background-repeat: no-repeat;
+	bottom: 0;
+	height: 1%;
+	right: 0;
+	width: 1%;	
+}
+.sombra-infeiror {
+	bottom: 0;
+	height: 1%;
+	left: 1%;
+	position: absolute;
+	width: 98%;
+}
+.sombra-superior-padrao {
+	background: url('/img/sombra-superior-padrao.png') bottom repeat-x;
+}
+.sombra-superior-vermelha {
+	background: url('/img/sombra-superior-vermelha.png') bottom repeat-x;
+}
+.sombra-superior-interna {
+	background: url('/img/sombra-superior-interna.png') bottom repeat-x;
+}
+.sombra-inferior-padrao {
+	background: url('/img/sombra-inferior-padrao.png') top repeat-x;
+}
+.sombra-inferior-vermelha {
+	background: url('/img/sombra-inferior-vermelha.png') top repeat-x;
+}
+.sombra-inferior-interna {
+	background: url('/img/sombra-inferior-interna.png') top repeat-x;
+}
